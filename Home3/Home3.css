@@ -1,0 +1,111 @@
+/* general text formatting */
+
+h1, h2, h3, nav, footer {
+ font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+body {
+   font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+   font-size: 100%;
+}
+
+.main {
+    width: 600px;
+    margin: 10px auto;
+}
+legend {
+    width: 450px;
+    text-align: center;
+    font-size: 110%;
+    font-weight: bold;
+}
+.body {
+    width: 600px;
+    margin: 20px;
+}
+.first {
+    margin: 20px 0px;
+}
+#title {
+    width: 550px;
+}
+#description {
+    width: 590px;
+    height: 100px;
+}
+.first label {
+    line-height: 1.5em;
+}
+.second {
+    margin: 20px 0px;
+    height: 210px;
+}
+.location {
+    width: 350px;
+    float: left;
+    clear: left;
+}
+.location label {
+    line-height: 2.5em;
+}
+#city {
+    width: 300px;
+}
+.check {
+    float: right;
+    clear: right;
+}
+.check fieldset {
+    width: 220px;
+    font-size: 90%;
+    margin: 5px 0px;
+}
+.check label {
+    font-size: 110%;
+    line-height: 1.5em;
+}
+.third {
+    height: 180px;
+}
+.agree {
+    margin: 20px 5px;
+}
+.RateandColor {
+    margin-top: 10px;
+    float: left;
+    clear: left;
+}
+.third label {
+    line-height: 1.5em;
+}
+.DateandTime {
+    width: 220px;
+    float: right;
+    clear: right;
+}
+.submitbuttons {
+    width: 600px;
+    text-align:center;
+
+}
+.submitbuttons input {
+    margin: 0px 5px;
+}
+input[type="submit"], input[type="reset"] {
+    border: 1px solid #006633;
+    background-color: #009966;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    width: 75px;
+    height: 30px;
+}
+input[type="submit"]:hover, input[type="reset"]:hover {
+    border:1px solid #006633;
+    background-color: #00CC33;
+    color: #ffffff;
+    cursor: pointer;
+}
+fieldset, input, textarea, select {
+    border: 1px dashed black;
+}
