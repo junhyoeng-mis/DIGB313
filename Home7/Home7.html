@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Homework7</title>
+      <link rel="stylesheet" href="Home7.css">
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhvA90uD-gstuqnIfr9wMxFd-4DitvVPw 	U&libraries=places"></script>
+  </head>
+  <body>
+    <h1>Check at the Google Map</h1>
+    <input id="searchInput" class="controls" type="text" placeholder="Enter a location">
+    <div id="map"></div>
+      <ul id="geoData">
+        <li>Full Address: <span id="location"></span></li>
+        <li>Postal Code: <span id="postal_code"></span></li>
+        <li>Country: <span id="country"></span></li>
+        <li>Latitude: <span id="lat"></span></li>
+        <li>Longitude: <span id="lon"></span></li>
+      </ul>
+    <script>
+      function initMap() {
+        var su = {lat: 36.610611, lng: 127.288528};
+          //고려대 세종캠퍼스 표시
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: su
+        });
+          //위치를 마크로 표시
+        var marker = new google.maps.Marker({
+          position: su,
+          map: map
+        });
+          //자동완성
+        var autocomplete = new google.maps.places.Autocomplete;
+        autocomplete.bindTo('bound',map);
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhvA90uD-gstuqnIfr9wMxFd-4DitvVPw&callback=initMap">
+    </script>
+  </body>
+</html>
